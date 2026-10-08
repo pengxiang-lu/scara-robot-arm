@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QSlider" name="horizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* 水平滑条整体样式 */
+QSlider::horizontal {
+    height: 6px; /* 轨道高度 */
+    margin: 5px 0; /* 上下外边距 */
+}
+
+/* 水平滑条轨道样式 */
+QSlider::groove:horizontal {
+    border: 1px solid #bbb; /* 轨道边框 */
+    background: #f0f0f0; /* 轨道背景色 */
+    height: 6px; /* 轨道高度 */
+    border-radius: 3px; /* 轨道圆角 */
+}
+
+/* 水平滑条已填充部分（滑块左侧） */
+QSlider::sub-page:horizontal {
+    background: #4a90e2; /* 已填充部分颜色 */
+    border-radius: 2px; /* 圆角 */
+}
+
+/* 水平滑条滑块样式（正常状态） */
+QSlider::handle:horizontal {
+    background: white; /* 滑块背景色 */
+    border: 1px solid #999; /* 滑块边框 */
+    width: 18px; /* 滑块宽度 */
+    height: 18px; /* 滑块高度 */
+    margin: -6px 0; /* 调整滑块位置（使其超出轨道） */
+    border-radius: 9px; /* 圆形滑块 */
+}
+
+/* 滑块悬停状态 */
+QSlider::handle:horizontal:hover {
+    background: #f5f5f5;
+    border-color: #666;
+}
+
+/* 滑块按下状态 */
+QSlider::handle:horizontal:pressed {
+    background: #e0e0e0;
+    border-color: #333;
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

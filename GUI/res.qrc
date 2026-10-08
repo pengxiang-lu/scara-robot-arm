@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/HMI_icon.png</file>
+        <file>image/robotic_arm_image.png</file>
+    </qresource>
+</RCC>

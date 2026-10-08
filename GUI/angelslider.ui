@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AngelSlider</class>
+ <widget class="QWidget" name="AngelSlider">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>49</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* 水平滑条整体容器 */
+QSlider::horizontal {
+    height: 12px;
+    margin: 8px 0;
+}
+
+/* 滑条轨道（未选中部分） */
+QSlider::groove:horizontal {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    height: 6px;
+}
+
+/* 滑条已选中部分 */
+QSlider::sub-page:horizontal {
+    background-color: #409eff;
+    border-radius: 6px;
+}
+
+/* 滑块样式（正常状态） */
+QSlider::handle:horizontal {
+    background-color: white;
+    border: 2px solid #409eff;
+    width: 10px;
+    height: 10px;
+    margin: -7px 0; /* 居中轨道 */
+    border-radius: 4px;
+}
+
+/* 滑块悬停状态（用边框加粗替代放大） */
+QSlider::handle:horizontal:hover {
+    background-color: #f0f7ff;
+    border-width: 3px; /* 悬停时边框变粗，视觉上放大 */
+}
+
+/* 滑块按下状态（用颜色加深替代缩小） */
+QSlider::handle:horizontal:pressed {
+    background-color: #e6f7ff;
+    border-color: #1890ff; /* 边框颜色加深 */
+}
+
+/* 禁用状态 */
+QSlider:disabled {
+    QSlider::groove:horizontal {
+        background-color: #f5f5f5;
+    }
+    QSlider::sub-page:horizontal {
+        background-color: #d9d9d9;
+    }
+    QSlider::handle:horizontal {
+        background-color: white;
+        border-color: #d9d9d9;
+    }
+}</string>
+     </property>
+     <property name="maximum">
+      <number>180</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSpinBox" name="spinBox">
+     <property name="minimumSize">
+      <size>
+       <width>80</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="keyboardTracking">
+      <bool>false</bool>
+     </property>
+     <property name="maximum">
+      <number>180</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
