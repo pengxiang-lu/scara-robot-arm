@@ -112,7 +112,31 @@ FA = 90° - alpha - beta
 
 ## 四、物料清单
 
-暂定
+机械物料：
 
+| 配件名称   | 数量     | 图片                                                         | 价格  |
+| ---------- | -------- | ------------------------------------------------------------ | ----- |
+| 机械臂本体 | 1套      | 无                                                           | 75    |
+| 直线轴承   | 4        | <img src="三轴SCARA机械臂设计笔记.assets/bb8751beeb6908f8696f179e2f317492.jpg" alt="bb8751beeb6908f8696f179e2f317492" style="zoom:50%;" /> | 4.4   |
+| T8螺杆     | 1        | <img src="三轴SCARA机械臂设计笔记.assets/648028b480116f2dacb5ed74ff8f5f93.jpg" alt="648028b480116f2dacb5ed74ff8f5f93" style="zoom:50%;" /> | 5.8   |
+| 2GT同步轮  | 2        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171339598.png" alt="image-20261013171339598" style="zoom:50%;" /> | 5.26  |
+| 2GT同步带  | 1m       | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171350313.png" alt="image-20261013171350313" style="zoom:50%;" /> | 2.3   |
+| 联轴器     | 1        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171408042.png" alt="image-20261013171408042" style="zoom:50%;" /> | 3.2   |
+| 42步进电机 | 3        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171423348.png" alt="image-20261013171423348" style="zoom:50%;" /> | 16    |
+| 大号轴承   | 2        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171528278.png" alt="image-20261013171528278" style="zoom:50%;" /> | 4.2   |
+| 小号轴承   | 4        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171543405.png" alt="image-20261013171543405" style="zoom:50%;" /> | 14.2  |
+| 铁柱       | 4根 15cm | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171557052.png" alt="image-20261013171557052" style="zoom:50%;" /> | 6.75  |
+| 六角螺丝   | 1袋      | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171640049.png" alt="image-20261013171640049" style="zoom:50%;" /> | 13.11 |
+| 气泵套件   | 1套      | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171656170.png" alt="image-20261013171656170" style="zoom:50%;" /> | 49    |
 
+机械臂本体预计花费200元(不含电池)。
+
+电子模块：
+
+| 配件名称        | 数量 | 图片                                                         | 价格 |
+| --------------- | ---- | ------------------------------------------------------------ | ---- |
+| DRV8825电机驱动 | 3    | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171507322.png" alt="image-20261013171507322" style="zoom:50%;" /> | 11   |
+| SNR9816 TTS模块 | 1    | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171711375.png" alt="image-20261013171711375" style="zoom:50%;" /> | 18.9 |
+
+其他电子物料见嘉立创工程，PCB使用嘉立创免费打印。硬件控制电路预计花费50元。
 
