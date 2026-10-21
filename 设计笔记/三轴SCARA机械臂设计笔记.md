@@ -4,19 +4,19 @@
 
 ### 1. 机械臂
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251020234522031.png" alt="image-20251020234522031" style="zoom: 33%;" />
+<img src="assets/image-20251020234522031.png" alt="image-20251020234522031" style="zoom: 33%;" />
 
 使用的机械臂是复刻了网络上开源的一个三轴SCARA机械臂（https://community.aijishu.com/a/1060000000361674），使用三个步进电机加上皮带传动驱动机械臂的运动，机械臂3D模型如上图所示。
 
 ### 2. 步进电机
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251020235020590.png" alt="image-20251020235020590" style="zoom: 50%;" />
+<img src="assets/image-20251020235020590.png" alt="image-20251020235020590" style="zoom: 50%;" />
 
 这是使用的步进电机的参数，产品介绍上面写的是3.3V额定电压，然后问了厂家实际上9~36V的电机供电电压都可以。所以设计上采用常用的12V供电。
 
 ### 3. 电磁铁
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251021155154234.png" alt="image-20251021155154234" style="zoom:50%;" />
+<img src="assets/image-20251021155154234.png" alt="image-20251021155154234" style="zoom:50%;" />
 
 使用了12V的电磁铁来吸取棋子。
 
@@ -39,25 +39,25 @@
 
 理论上可以使用直接像DY-SV17F这样的USB提前下载要播报语音的模块，但是打算使用SNR9816TTS模块来实现语音播报。
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251021155515235.png" alt="image-20251021155515235" style="zoom:50%;" />
+<img src="assets/image-20251021155515235.png" alt="image-20251021155515235" style="zoom:50%;" />
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251021160828882.png" alt="image-20251021160828882" style="zoom:50%;" />
+<img src="assets/image-20251021160828882.png" alt="image-20251021160828882" style="zoom:50%;" />
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251021160750109.png" alt="image-20251021160750109" style="zoom:50%;" />
+<img src="assets/image-20251021160750109.png" alt="image-20251021160750109" style="zoom:50%;" />
 
 ### 2. 步进电机驱动模块
 
 由于电机参数上面写的是最高电流1.5A，所以采用DRV8825绰绰有余，而且比传统的A4988步进电机驱动的要好用很多。
 
-![image-20251021155840045](三轴SCARA机械臂设计笔记.assets/image-20251021155840045.png)
+![image-20251021155840045](assets/image-20251021155840045.png)
 
-<img src="三轴SCARA机械臂设计笔记.assets/1a6a2c62982a4a2e92ae89703ca041d7.png" alt="1a6a2c62982a4a2e92ae89703ca041d7" style="zoom: 33%;" />
+<img src="assets/1a6a2c62982a4a2e92ae89703ca041d7.png" alt="1a6a2c62982a4a2e92ae89703ca041d7" style="zoom: 33%;" />
 
 ### 3. 有刷电机驱动模块
 
 由于只需要一路有刷电机驱动，而且电流要求较小，所以电机采用L9110S电机驱动，工作电压2.5V~12V，最大持续电流1.2A，最大电流2A满足电流需求。这是手册里给的参考电路：
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251021155441521.png" alt="image-20251021155441521" style="zoom:50%;" />
+<img src="assets/image-20251021155441521.png" alt="image-20251021155441521" style="zoom:50%;" />
 
 ### 4. 电源树
 
@@ -65,7 +65,7 @@
 
 首先使用TPS563201这款DCDC电源芯片将电压降到5V，再通过LDO将5V电压降压到3.3V。原理图如下：
 
-<img src="三轴SCARA机械臂设计笔记.assets/image-20251119195056197.png" alt="image-20251119195056197" style="zoom: 50%;" />
+<img src="assets/image-20251119195056197.png" alt="image-20251119195056197" style="zoom: 50%;" />
 
 
 
@@ -88,7 +88,7 @@ FA、SA 轴分别使用 5.1 和 3.9 的传动比；Z 轴根据 2 mm 导程换算
 
 ### 2. 机械臂解算
 
-<img src="三轴SCARA机械臂设计笔记.assets/屏幕截图 2025-11-09 152910.png" alt="屏幕截图 2025-11-09 152910" style="zoom:67%;" />
+<img src="assets/屏幕截图 2025-11-09 152910.png" alt="屏幕截图 2025-11-09 152910" style="zoom:67%;" />
 
 ​	这是机械臂的三个轴的定义：FA（主臂），SA（副臂），Z（垂直丝杆）
 
@@ -117,17 +117,17 @@ FA = 90° - alpha - beta
 | 配件名称   | 数量     | 图片                                                         | 价格  |
 | ---------- | -------- | ------------------------------------------------------------ | ----- |
 | 机械臂本体 | 1套      | 无                                                           | 75    |
-| 直线轴承   | 4        | <img src="三轴SCARA机械臂设计笔记.assets/bb8751beeb6908f8696f179e2f317492.jpg" alt="bb8751beeb6908f8696f179e2f317492" style="zoom:50%;" /> | 4.4   |
-| T8螺杆     | 1        | <img src="三轴SCARA机械臂设计笔记.assets/648028b480116f2dacb5ed74ff8f5f93.jpg" alt="648028b480116f2dacb5ed74ff8f5f93" style="zoom:50%;" /> | 5.8   |
-| 2GT同步轮  | 2        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171339598.png" alt="image-20261013171339598" style="zoom:50%;" /> | 5.26  |
-| 2GT同步带  | 1m       | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171350313.png" alt="image-20261013171350313" style="zoom:50%;" /> | 2.3   |
-| 联轴器     | 1        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171408042.png" alt="image-20261013171408042" style="zoom:50%;" /> | 3.2   |
-| 42步进电机 | 3        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171423348.png" alt="image-20261013171423348" style="zoom:50%;" /> | 16    |
-| 大号轴承   | 2        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171528278.png" alt="image-20261013171528278" style="zoom:50%;" /> | 4.2   |
-| 小号轴承   | 4        | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171543405.png" alt="image-20261013171543405" style="zoom:50%;" /> | 14.2  |
-| 铁柱       | 4根 15cm | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171557052.png" alt="image-20261013171557052" style="zoom:50%;" /> | 6.75  |
-| 六角螺丝   | 1袋      | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171640049.png" alt="image-20261013171640049" style="zoom:50%;" /> | 13.11 |
-| 气泵套件   | 1套      | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171656170.png" alt="image-20261013171656170" style="zoom:50%;" /> | 49    |
+| 直线轴承   | 4        | <img src="assets/bb8751beeb6908f8696f179e2f317492.jpg" alt="bb8751beeb6908f8696f179e2f317492" style="zoom:50%;" /> | 4.4   |
+| T8螺杆     | 1        | <img src="assets/648028b480116f2dacb5ed74ff8f5f93.jpg" alt="648028b480116f2dacb5ed74ff8f5f93" style="zoom:50%;" /> | 5.8   |
+| 2GT同步轮  | 2        | <img src="assets/image-20261013171339598.png" alt="image-20261013171339598" style="zoom:50%;" /> | 5.26  |
+| 2GT同步带  | 1m       | <img src="assets/image-20261013171350313.png" alt="image-20261013171350313" style="zoom:50%;" /> | 2.3   |
+| 联轴器     | 1        | <img src="assets/image-20261013171408042.png" alt="image-20261013171408042" style="zoom:50%;" /> | 3.2   |
+| 42步进电机 | 3        | <img src="assets/image-20261013171423348.png" alt="image-20261013171423348" style="zoom:50%;" /> | 16    |
+| 大号轴承   | 2        | <img src="assets/image-20261013171528278.png" alt="image-20261013171528278" style="zoom:50%;" /> | 4.2   |
+| 小号轴承   | 4        | <img src="assets/image-20261013171543405.png" alt="image-20261013171543405" style="zoom:50%;" /> | 14.2  |
+| 铁柱       | 4根 15cm | <img src="assets/image-20261013171557052.png" alt="image-20261013171557052" style="zoom:50%;" /> | 6.75  |
+| 六角螺丝   | 1袋      | <img src="assets/image-20261013171640049.png" alt="image-20261013171640049" style="zoom:50%;" /> | 13.11 |
+| 气泵套件   | 1套      | <img src="assets/image-20261013171656170.png" alt="image-20261013171656170" style="zoom:50%;" /> | 49    |
 
 机械臂本体预计花费200元(不含电池)。
 
@@ -135,8 +135,8 @@ FA = 90° - alpha - beta
 
 | 配件名称        | 数量 | 图片                                                         | 价格 |
 | --------------- | ---- | ------------------------------------------------------------ | ---- |
-| DRV8825电机驱动 | 3    | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171507322.png" alt="image-20261013171507322" style="zoom:50%;" /> | 11   |
-| SNR9816 TTS模块 | 1    | <img src="三轴SCARA机械臂设计笔记.assets/image-20261013171711375.png" alt="image-20261013171711375" style="zoom:50%;" /> | 18.9 |
+| DRV8825电机驱动 | 3    | <img src="assets/image-20261013171507322.png" alt="image-20261013171507322" style="zoom:50%;" /> | 11   |
+| SNR9816 TTS模块 | 1    | <img src="assets/image-20261013171711375.png" alt="image-20261013171711375" style="zoom:50%;" /> | 18.9 |
 
 其他电子物料见嘉立创工程，PCB使用嘉立创免费打印。硬件控制电路预计花费50元。
 

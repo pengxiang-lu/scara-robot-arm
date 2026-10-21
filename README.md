@@ -12,19 +12,19 @@
 
 真实照片：
 
-<img src="README.assets/image-20261008175441320.png" alt="image-20261008175441320" style="zoom: 50%;" />
+<img src="assets/image-20261008175441320.png" alt="image-20261008175441320" style="zoom: 50%;" />
 
 驱动电路板：
 
-<img src="README.assets/image-20261008180425003.png" alt="image-20261008180425003" style="zoom:50%;" />
+<img src="assets/image-20261008180425003.png" alt="image-20261008180425003" style="zoom:50%;" />
 
 上位机照片：
 
-<img src="README.assets/image-20261008175856057.png" alt="image-20261008175856057" style="zoom: 67%;" />
+<img src="assets/image-20261008175856057.png" alt="image-20261008175856057" style="zoom: 67%;" />
 
 ​	仿真照片：
 
-<img src="README.assets/image-20261008180002238.png" alt="image-20261008180002238" style="zoom:67%;" />
+<img src="assets/image-20261008180002238.png" alt="image-20261008180002238" style="zoom:67%;" />
 
 ## 功能概览
 
