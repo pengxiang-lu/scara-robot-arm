@@ -1,0 +1,21 @@
+path: /home/lpx/桌面/robot
+train: images
+val: images
+test: images
+
+nc: 14
+names:
+  0: red cube
+  1: green cube
+  2: blue cube
+  3: red bowl
+  4: green bowl
+  5: blue bowl
+  6: blue cup
+  7: green cup
+  8: banana
+  9: apple
+  10: red plate
+  11: baseball
+  12: mark pen
+  13: yellow cube
